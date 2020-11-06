@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Desafio</string>
+    <string name="till_username">Nome do usuário</string>
 </resources>
