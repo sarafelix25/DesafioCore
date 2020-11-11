@@ -1,4 +1,17 @@
 <resources>
-    <string name="app_name">Desafio</string>
-    <string name="till_username">Nome do usuário</string>
+    <string name="app_name">Digital House Foods</string>
+
+    <!--Tela Login-->
+    <string name="til_username">Email</string>
+    <string name="til_password">Password</string>
+    <string name="btn_login">LOG IN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="tv_info">Não tem conta? Cadastre-se</string>
+
+    <!--Tela Cadastro-->
+    <string name="titleCadastrar">Cadastrar</string>
+    <string name="tilEmail">E-mail</string>
+    <string name="tilConfirmPassword">Confirmar senha</string>
+    <string name="btnCadastrar">Cadastrar</string>
+
 </resources>
