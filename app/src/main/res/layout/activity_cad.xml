@@ -9,49 +9,162 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/setinha"
             app:title="@string/Register"
-            app:titleTextColor="@color/colorWhite"
-            app:navigationIcon="@drawable/ic_arrow_back"
-            android:background="@color/colorAccent"/>
+            app:titleTextColor="@color/colorWhite">
+
+        </androidx.appcompat.widget.Toolbar>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/home">
-
-
-            <include
-                layout="@layout/activity_login"
-                android:layout_width="366dp"
-                android:layout_height="510dp"
-                android:layout_margin="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="181dp"
-                android:layout_height="64dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintBottom_toTopOf="@+id/include2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.069"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.0">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="12dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Name"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_edName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="DigitalHouse"
+                android:textColor="#4169E1"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="12dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edUserName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/til_username"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_edUserName"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="dh@digitalhouse.com"
+                android:textColor="#4169E1"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/til_password"
+                android:inputType="textPassword"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/tv_edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="******************"
+                android:textColor="#4169E1"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="12dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edRepeatPass"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Repeat Password"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_edRepeatPass"
+                android:layout_width="405dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="******************"
+                android:textColor="#4169E1"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="211dp"
+            android:backgroundTint="@color/colorRed"
+            android:text="@string/btn_register"
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="12dp"/>
+
     </LinearLayout>
 
-
-
 </ScrollView>
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
 package digital.house.com.desafio
 
-class ActivityComida {
+class DetalheMenuActivity {
 }

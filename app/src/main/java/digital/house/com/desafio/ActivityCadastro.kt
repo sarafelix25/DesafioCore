@@ -3,31 +3,22 @@ package digital.house.com.desafio
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_cad.*
 
 class ActivityCadastro: AppCompatActivity() {
 
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_cadastro)
-
-            btn_register.setOnClickListener {
-                callMain(getInformationUser())
-            }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_cad)
+        toolbar.setNavigationOnClickListener {
+            startActivity(Intent(this, ActivityLogin::class.java))
         }
-
-        //Pega as informações do usuario
-        fun getInformationUser(): Usuario{
-            val username = edUsername.text.toString()
-            val senha = edPassword.text.toString()
-
-            return Usuario(1, username, senha)
+        btnRegister.setOnClickListener {
+            callMain()
         }
+    }
 
-        //Chama MainActivity
-        fun callMain(usuario: Usuario){
-            var intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("key", usuario)
-            startActivity(intent)
-        }
+    fun callMain() {
+        var intent = Intent(this, MainActivity::class.java)
     }
 }

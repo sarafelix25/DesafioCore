@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="500dp"
-    android:layout_margin="0dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
     android:orientation="vertical"
-    android:padding="20dp">
+    tools:context=".ActivityLogin">
 
     <LinearLayout
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:layout_width="800dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/colorWhite"
+            android:orientation="horizontal"
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp">
 
 
             <com.google.android.material.textfield.TextInputEditText
@@ -26,8 +38,8 @@
 
             <TextView
                 android:id="@+id/tv_edUserName"
-                android:layout_width="357dp"
-                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="bottom"
                 android:text="dh@digitalhouse.com"
@@ -38,7 +50,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp">
+
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edPassword"
@@ -46,12 +61,13 @@
                 android:layout_height="30dp"
                 android:hint="@string/til_password"
                 android:inputType="textPassword"
-                android:textSize="12dp" />
-
+                android:textSize="12dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="9dp"/>
 
             <TextView
                 android:id="@+id/tv_edPassword"
-                android:layout_width="355dp"
+                android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_gravity="center_horizontal"
                 android:gravity="bottom"
@@ -68,7 +84,9 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
         android:layout_marginTop="51dp"
+        android:layout_marginRight="9dp"
         android:backgroundTint="#FF0000"
         android:text="@string/btn_login"
         android:textColor="@color/colorWhite"
@@ -85,8 +103,8 @@
 
         <View
             android:id="@+id/view"
-            android:layout_width="170dp"
-            android:layout_height="1dp"
+            android:layout_width="195dp"
+            android:layout_height="3dp"
             android:layout_gravity="center"
             android:background="@android:color/darker_gray"
             android:gravity="center" />
@@ -114,7 +132,9 @@
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
         android:layout_marginTop="80dp"
+        android:layout_marginRight="9dp"
         android:backgroundTint="@color/colorGray"
         android:text="@string/btn_register"
         android:textColor="@color/colorWhite"
