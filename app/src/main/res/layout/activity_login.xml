@@ -1,27 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="500dp"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:padding="20dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/home">
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
 
-        <include
-            android:id="@+id/include"
-            layout="@layout/login_body"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_editor_absoluteX="10dp"
-            tools:layout_editor_absoluteX="-16dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="wrap_content">
 
 
-</ScrollView>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edUserName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/til_username"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_edUserName"
+                android:layout_width="357dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="dh@digitalhouse.com"
+                android:textColor="#4169E1"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/til_password"
+                android:inputType="textPassword"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/tv_edPassword"
+                android:layout_width="355dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:text="******************"
+                android:textColor="#4169E1"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:backgroundTint="#FF0000"
+        android:text="@string/btn_login"
+        android:textColor="@color/colorWhite"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="170dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="OR"
+            android:textSize="11dp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="169dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:gravity="center" />
+
+    </LinearLayout >
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/colorGray"
+        android:text="@string/btn_register"
+        android:textColor="@color/colorWhite"
+        android:textSize="14dp" />
+
+</LinearLayout>
