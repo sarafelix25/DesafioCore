@@ -36,13 +36,7 @@ class ActivityMenu: AppCompatActivity(), PratoAdap.OnPratoClickListener {
 
     fun getPratos(): ArrayList<Prato>{
         val p1 = Prato("Salada com molho Gengibre", R.drawable.image2)
-        val p2 = Prato("Sopa de Picles", R.drawable.image4)
-        val p3 = Prato("Ovo e Waffle", R.drawable.image3)
-        val p4 = Prato("Torrada com Ovo", R.drawable.image5)
-        val p5 = Prato("Camarão assado na Pedra", R.drawable.image1)
-        val p6 = Prato("Sorvete com calda de Pesto", R.drawable.image2)
-
-        return arrayListOf(p1, p2, p3, p4, p5, p6)
+        return arrayListOf(p1, p1, p1, p1, p1, p1)
     }
 
     override fun pratoClick(position: Int){
