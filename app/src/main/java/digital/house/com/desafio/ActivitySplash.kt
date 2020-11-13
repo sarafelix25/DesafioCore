@@ -11,7 +11,7 @@ class ActivitySplash: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash)
         imgv2.setOnClickListener{
-            startActivity(Intent(this, ActivityLogin::class.java))
+            startActivity(Intent(this@ActivitySplash, ActivityLogin::class.java))
         }
     }
 }

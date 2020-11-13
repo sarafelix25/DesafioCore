@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.prato.view.*
 
-class PratoAdap(private val listPratos: ArrayList<Prato>, val listener: PratoAdap.OnPratoClickListener): RecyclerView.Adapter<PratoAdap.PratoViewHolder>() {
+class PratoAdap (private val listPratos: ArrayList<Prato>, val listener: PratoAdap.OnPratoClickListener): RecyclerView.Adapter<PratoAdap.PratoViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup, viewType: Int
     ): PratoAdap.PratoViewHolder {

@@ -24,7 +24,12 @@ class DetalheMenuActivity: AppCompatActivity() {
         tvNomePrato.text = nome
 
         val toolbar = setSupportActionBar(tbdetalhe)
+        getSupportActionBar()?.setDisplayShowTitleEnabled(false)
     }
 
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 
 }

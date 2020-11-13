@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/imgv2"
-        app:srcCompat="@drawable/image6"
+        app:srcCompat="@drawable/image5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -37,13 +37,13 @@ class MainActivity : AppCompatActivity(), RestauranteAdap.OnRestauranteClickList
             "Outback - Moema",
             "Av. Moaci, 187, 187 - Moema, São Paulo",
             "Fecha às 00:00",
-            R.drawable.image3
+            R.drawable.image4
         )
         val r4 = Restaurante(
             "Sí Señor!",
             "Alameda Jauaperi, 626 - Moema",
             "Fecha às 01:00",
-            R.drawable.image4
+            R.drawable.image3
         )
 
         return arrayListOf(r1, r2, r3, r4)

@@ -10,15 +10,21 @@ class ActivityCadastro: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cad)
-        toolbar.setNavigationOnClickListener {
-            startActivity(Intent(this, ActivityLogin::class.java))
-        }
+
         btnRegister.setOnClickListener {
             callMain()
         }
+
+        val toolbar= setSupportActionBar(tbcad)
     }
 
     fun callMain() {
         var intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

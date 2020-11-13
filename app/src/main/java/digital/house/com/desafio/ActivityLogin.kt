@@ -24,9 +24,11 @@ class ActivityLogin: AppCompatActivity() {
 
     fun callMain() {
         var intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 
     fun callCadastro() {
         var intent = Intent(this, ActivityCadastro::class.java )
+        startActivity(intent)
     }
 }

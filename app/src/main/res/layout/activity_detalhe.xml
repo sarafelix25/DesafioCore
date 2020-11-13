@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/image4" />
+        android:src="@drawable/image2" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tbdetalhe"
