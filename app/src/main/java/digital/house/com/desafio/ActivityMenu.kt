@@ -45,7 +45,7 @@ class ActivityMenu: AppCompatActivity(), PratoAdap.OnPratoClickListener {
         return arrayListOf(p1, p2, p3, p4, p5, p6)
     }
 
-    fun pratoClick(position: Int){
+    override fun pratoClick(position: Int){
         var intent = Intent(this, DetalheMenuActivity::class.java)
         var prato: Prato = listaPratos.get(position)
 

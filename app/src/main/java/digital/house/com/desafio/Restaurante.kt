@@ -1,7 +1,7 @@
 package digital.house.com.desafio
 
-class Restaurante (var nome : String, var endereco: String, var horario: String, var foto: Int){
+class Restaurante (var nome : String, val endereco: String, val horario: String, val foto: Int){
     override fun toString(): String {
-        return "Restaurante(var nome=$nome, var endereco=$endereco, var horario=$horario, var foto=$foto)"
+        return "Restaurante(nome=$nome, endereco=$endereco, horario=$horario, foto=$foto)"
     }
 }

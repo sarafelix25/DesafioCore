@@ -48,7 +48,3 @@ class RestauranteAdap(private val listRestaurantes: ArrayList<Restaurante>, val 
         }
     }
 }
-//
-//private fun TextView.setImageResource(foto: Int) {
-//
-//}
