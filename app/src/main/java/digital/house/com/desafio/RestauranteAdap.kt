@@ -8,7 +8,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RestauranteAdap(private val listRestaurantes: ArrayList<Restaurante>, val listener: OnRestauranteClickListener): RecyclerView.Adapter<RestauranteAdap.RestauranteViewHolder>() {
+class RestauranteAdap(
+    private val listRestaurantes: ArrayList<Restaurante>,
+    val listener: OnRestauranteClickListener
+): RecyclerView.Adapter<RestauranteAdap.RestauranteViewHolder>() {
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -25,10 +29,11 @@ class RestauranteAdap(private val listRestaurantes: ArrayList<Restaurante>, val 
         holder.tvHorario.text = restaurante.horario
         holder.ivRestaurante.setImageResource(restaurante.foto)
     }
+
     interface OnRestauranteClickListener{
         fun restauranteClick(position: Int)
     }
-
+    
     override fun getItemCount(): Int = listRestaurantes.size
 
     inner class RestauranteViewHolder(itemView: View): RecyclerView.ViewHolder(itemView), View.OnClickListener{

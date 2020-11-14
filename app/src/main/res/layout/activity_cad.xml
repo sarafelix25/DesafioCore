@@ -61,7 +61,9 @@
                 android:gravity="bottom"
                 android:text="DigitalHouse"
                 android:textColor="#4169E1"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="13dp"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,7 +89,9 @@
                 android:gravity="bottom"
                 android:text="dh@digitalhouse.com"
                 android:textColor="#4169E1"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="13dp"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -114,7 +118,9 @@
                 android:gravity="bottom"
                 android:text="******************"
                 android:textColor="#4169E1"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="13dp"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -133,10 +139,13 @@
                 android:textSize="12dp" />
 
             <TextView
-                android:id="@+id/tv_edRepeatPass"
-                android:layout_width="405dp"
+                android:id="@+id/tv_edPassword2"
+                android:layout_width="match_parent"
                 android:layout_height="28dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1"
                 android:gravity="bottom"
                 android:text="******************"
                 android:textColor="#4169E1"
@@ -148,13 +157,13 @@
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="211dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="189dp"
+            android:layout_marginRight="12dp"
             android:backgroundTint="@color/colorRed"
             android:text="@string/btn_register"
             android:textColor="@color/colorWhite"
-            android:textSize="14dp"
-            android:layout_marginLeft="9dp"
-            android:layout_marginRight="12dp"/>
+            android:textSize="14dp" />
 
     </LinearLayout>
 
